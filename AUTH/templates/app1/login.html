@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block c1 %}
+
+<div class="container">
+    <div class="jumbotron">
+
+        <form method="post">
+
+            {% csrf_token %}
+
+            <label for="un">username</label>
+            <input type="text" name="un" class="form-control" >
+            <br>
+
+            <label for="pw">Passwrod</label>
+            <input type="password" name="pw" class="form-control">
+            <br>
+
+            <input type="submit" class="btn btn-success btn-lg">
+            <button class="btn btn-danger btn-lg"><a href="{% url 'signupview' %}">Signup</a></button>
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+{% endblock %}

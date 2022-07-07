@@ -7,6 +7,7 @@ from django.http import HttpResponse
 # Create your views here.
 # Hi this is views
 #hiii
+#hello
 
 
 @login_required()
